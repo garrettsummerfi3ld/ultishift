@@ -9,11 +9,13 @@ Ultishift is an encryption method utilizing a list of encryption and cipher meth
 * Python3
 
 ### Build Steps
+
 ```bash
 git clone https://github.com/ciph0n/ultishift
 pip install -r requirements.txt
 pyinstaller ultishift.py --onefile --name ultishift
 ```
+
 ## How to use
 
 Run the binary to run the application.
