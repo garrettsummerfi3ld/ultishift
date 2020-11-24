@@ -12,7 +12,7 @@ Ultishift is an encryption method utilizing a list of encryption and cipher meth
 ```bash
 git clone https://github.com/ciph0n/ultishift
 pip install -r requirements.txt
-pyinstaller main.py --onefile --name ultishift
+pyinstaller ultishift.py --onefile --name ultishift
 ```
 ## How to use
 
