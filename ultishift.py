@@ -439,7 +439,7 @@ def filedecrypt(filename, extension):
 
 def main():
     try:
-        text = input(f'--------------------------------------------\n--> Ultishift | Loaded: {loadedfile}\n--------------------------------------------\n[A] Encrypt\n[B] Decrypt\n[C] File Encrypt\n[D] File Decrypt\n[E] Config Loader\n[X] Exit\n\nSelection: ')
+        text = input(f'--------------------------------------------\n--> Ultishift | Loaded: {loadedfile}\n--------------------------------------------\n[A] Encrypt\n[B] Decrypt\n[C] File Encrypt\n[D] File Decrypt\n[E] Config Loader\n[F] Open Folder\n[X] Exit\n\nSelection: ')
         if text.lower() == 'a': # message encrypt only
             password = input('Password: ')
             data = str(input('Text2Encrypt: '))
@@ -459,6 +459,9 @@ def main():
         elif text.lower() == 'e': # config loader
             data = str(input('File2Load [name.yaml]: '))
             configloader(data, noexceptions=True)
+        elif text.lower() == 'f': # open folder location
+            os.startfile(f'{path}\\ultishift')
+            print('\nOpening ultishift path...')
         elif text.lower() == 'x':
             print('\nExiting..')
             sys.exit()
